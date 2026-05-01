@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoundX Headphones</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- BACKGROUND GLOW -->
+<div class="bg-blur"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">SoundX</div>
+
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#product">Product</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#order">Order</a></li>
+  </ul>
+
+  <div class="cart-icon">
+    🛒 <span id="cartCount">0</span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-inner">
+
+    <div class="hero-text">
+      <span class="tag">#1 Wireless Headphones</span>
+
+      <h1>Feel Every Beat with <span>SoundX</span></h1>
+
+      <p>Premium noise cancellation, deep bass and ultra comfort for all-day listening.</p>
+
+      <div class="hero-buttons">
+        <button class="btn buy-now">Buy Now</button>
+        <button class="btn secondary add-cart">Add to Cart</button>
+      </div>
+
+      <div class="stats">
+        <div><h3>30Hr</h3><p>Battery</p></div>
+        <div><h3>4.9★</h3><p>Rating</p></div>
+        <div><h3>10K+</h3><p>Users</p></div>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="hero img.png">
+    </div>
+
+  </div>
+</section>
+
+<!-- PRODUCT -->
+<section id="product">
+  <div class="container product-layout">
+
+    <div class="product-img">
+      <img src="hero img.png">
+    </div>
+
+    <div class="product-info">
+      <h2>SoundX Headphones</h2>
+
+      <p class="subtitle">
+        Premium wireless headphones with active noise cancellation and deep bass.
+      </p>
+
+      <div class="price">₹2999</div>
+
+      <ul class="highlights">
+        <li>🎧 Active Noise Cancellation</li>
+        <li>🔋 30 Hours Battery Life</li>
+        <li>🎵 Deep Bass & HD Sound</li>
+        <li>⚡ Fast Charging Support</li>
+      </ul>
+
+      <div class="product-buttons">
+        <button class="btn add-cart">Add to Cart</button>
+        <button class="btn buy-now">Buy Now</button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+  <h2 class="section-title">Gallery</h2>
+
+  <div class="grid container">
+    <img src="product.png">
+    <img src="lifestyle.png">
+    <img src="different angle.png">
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <h2 class="section-title">Features</h2>
+
+  <div class="grid container">
+    <div class="card">🎧 Noise Cancellation</div>
+    <div class="card">🔋 30 Hour Battery</div>
+    <div class="card">🎵 Deep Bass Sound</div>
+  </div>
+</section>
+
+<!-- WHAT'S IN BOX -->
+<section>
+  <h2 class="section-title">What's in the Box</h2>
+
+  <div class="box-wrapper container">
+
+    <button class="scroll-btn left">&#10094;</button>
+
+    <div class="box-container" id="boxContainer">
+
+      <div class="box-item">🎧 Headphones</div>
+      <div class="box-item">🔌 Cable</div>
+      <div class="box-item">📘 Manual</div>
+      <div class="box-item">👜 Case</div>
+
+    </div>
+
+    <button class="scroll-btn right">&#10095;</button>
+
+  </div>
+</section>
+
+<!-- CART -->
+<section>
+  <h2 class="section-title">Cart</h2>
+
+  <div class="container card">
+    <p>Items in cart: <span id="cartDisplay">0</span></p>
+    <button class="btn buy-now">Proceed to Buy</button>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <h2 class="section-title">Reviews</h2>
+
+  <div class="grid container">
+
+    <div class="card">⭐⭐⭐⭐⭐<p>Amazing sound quality!</p></div>
+    <div class="card">⭐⭐⭐⭐<p>Very comfortable headphones.</p></div>
+    <div class="card">⭐⭐⭐⭐⭐<p>Best in this price range!</p></div>
+
+  </div>
+</section>
+
+<!-- ORDER -->
+<section id="order">
+  <h2 class="section-title">Place Order</h2>
+
+  <form class="order-form" id="orderForm">
+    <input name="name" placeholder="Name" required>
+    <input name="phone" placeholder="Phone" required>
+    <input name="address" placeholder="Address" required>
+    <textarea name="message" placeholder="Notes"></textarea>
+
+    <button class="btn" type="submit">Place Order</button>
+  </form>
+</section>
+<!-- FOOTER -->
+<footer>
+  © 2026 SoundX. All Rights Reserved.
+</footer>
+
+<!-- TOAST -->
+<div id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+    emailjs.init("A746vC3wv-EAV6RVH");
+})();
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
